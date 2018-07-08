@@ -1,0 +1,13 @@
+{
+  "short_name": "Dark Frontier",
+  "name": "Dark Frontier",
+  "icons": [
+    {
+      "src": "images/logo4.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
