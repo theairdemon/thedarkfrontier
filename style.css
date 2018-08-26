@@ -5,7 +5,7 @@
 
 ::-webkit-scrollbar {
     display: none;
-} 
+}
 
 @font-face {
   font-family: russo-one;
@@ -95,9 +95,21 @@ img {
   display: block;
 }
 
+#back-button, #close-button {
+  visibility:normal;
+}
+
+.index-link {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 800px) {
   h1 {
     font-size: 50pt;
+  }
+
+  #back-button, #close-button {
+    visibility:hidden;
   }
 
   /* ===================================
