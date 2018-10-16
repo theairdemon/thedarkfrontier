@@ -15,7 +15,44 @@
 html {
   width: 100%;
   height: 100%;
-  background: black
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+  background-attachment: fixed;
 }
 
 main {
@@ -25,7 +62,9 @@ main {
   margin: 0 auto;
   padding: 0px;
   z-index: 1000;
+  background-color: transparent;
 }
+
 
 h1 {
   color: white;
@@ -39,7 +78,7 @@ h1 {
 h3 {
   color: white;
   font-family: sans-serif;
-  font-size: 18pt;
+  font-size: 24pt;
   text-align: center;
   width: 100%;
 }
@@ -48,6 +87,24 @@ p {
   color: white;
   font-family: sans-serif;
   padding: 5px;
+}
+
+ul {
+  /*background-color: red;*/
+  padding-right: 40px;
+}
+
+li {
+  color: white;
+  /*background-color: blue;*/
+  font-family: sans-serif;
+  font-size: 18pt;
+  padding: 5px 0px 5px 0px;
+}
+
+.heading-link {
+  color: white;
+  text-decoration: none;
 }
 
 .stars, .twinkling, .clouds {
@@ -61,12 +118,14 @@ p {
 .stars {
   background:#000 url(images/stars.png) repeat top center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   z-index:0;
 }
 
 .clouds{
   background:transparent url(images/clouds3.png) repeat top center;
+  background-attachment: fixed;
   z-index:3;
 }
 
@@ -76,11 +135,16 @@ p {
 [class*="col-"] {
   float: left;
   width: 100%;
+  /*border: 1px white solid;*/
 }
 
 .row {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.row.gray-bkg {
+  background: rgba(128,128,128,0.75);
 }
 
 .row::after {
