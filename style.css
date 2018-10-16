@@ -103,6 +103,14 @@ img {
   text-decoration: none;
 }
 
+.planetary-database-list {
+  list-style: none;
+}
+
+
+/* ===================================
+   Respond to Computer vs. Mobile
+   =================================== */
 @media only screen and (min-width: 800px) {
   h1 {
     font-size: 50pt;
