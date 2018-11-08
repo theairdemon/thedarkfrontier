@@ -20,6 +20,7 @@ html {
       -ms-animation: fadein 2s; /* Internet Explorer */
        -o-animation: fadein 2s; /* Opera < 12.1 */
           animation: fadein 2s;
+  word-wrap: break-word;
 }
 
 @keyframes fadein {
@@ -148,6 +149,9 @@ li {
   /*border: 1px white solid;*/
 }
 
+.col-1.header {width: 8.33%;}
+.col-10.header {width: 83.33%;}
+
 .row {
   width: 100%;
   margin-bottom: 20px;
@@ -178,6 +182,12 @@ img {
 
 #back-button, #close-button {
   visibility:normal;
+  background: rgba(128,128,128,0.85);
+  border-radius: 50%;
+  color:white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
 .index-link {
