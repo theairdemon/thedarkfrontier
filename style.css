@@ -158,12 +158,12 @@ li {
 }
 
 .row.gray-bkg {
-  background: rgba(128,128,128,0.85);
+  background: rgba(128,128,128,0.75);
   border-radius: 5px;
 }
 
 [class*="col-"].gray-bkg {
-  background: rgba(128,128,128,0.85);
+  background: rgba(128,128,128,0.75);
   border-radius: 5px;
   min-height: 100px;
 }
